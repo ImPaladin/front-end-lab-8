@@ -1,0 +1,113 @@
+body {
+  background: #dcbb9a;
+  color: #000000; }
+  body a {
+    color: #3d70a1; }
+  body p {
+    font-family: Roman, "Times New Roman", Times, serif; }
+
+h1 {
+  text-transform: none;
+  margin-top: 0px;
+  text-align: center;
+  color: #893c00; }
+
+h2 {
+  margin-top: 10px;
+  color: #893c00; }
+
+#content {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff; }
+
+div .brief {
+  color: #000;
+  width: 390px;
+  height: 94px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  float: left;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 14px;
+  background: #fadcba; }
+
+img {
+  border: 2px solid #893c00;
+  padding: 2px; }
+  img.img-left {
+    margin-right: 20px;
+    float: left; }
+  img.img-right {
+    margin-left: 20px;
+    float: right; }
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 60px; }
+  table caption {
+    color: #000;
+    text-align: right; }
+  table tr th {
+    color: #000;
+    background-color: #e0e0e0;
+    font-weight: normal;
+    text-align: left;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border-right: 1px solid #fff; }
+    table tr th:last-child {
+      border-right: none; }
+  table td {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+    padding: 10px 15px; }
+    table td a {
+      color: #3d70a1; }
+
+form {
+  width: 100%; }
+  form h2 {
+    margin-bottom: 2px; }
+  form p {
+    color: #808080;
+    text-transform: uppercase;
+    margin-bottom: 5px; }
+  form div.unames {
+    display: flex;
+    width: 100%; }
+  form div input {
+    border: 1px solid #e0e0e0;
+    margin-right: 9px;
+    padding-left: 4px;
+    height: 23px;
+    width: 476px; }
+  form div.contactlast {
+    width: 100%; }
+    form div.contactlast input {
+      padding-right: 4px;
+      padding-left: 6px;
+      height: 23px;
+      width: 100%; }
+  form textarea {
+    margin-top: 0px;
+    border: 1px solid #e0e0e0;
+    padding-top: 5px;
+    padding-right: 8px;
+    width: 100%; }
+  form input[type="submit"] {
+    text-transform: uppercase;
+    background-color: #ffffff;
+    font-size: 20px;
+    border: 1px solid #3d70a1;
+    color: #3d70a1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 240px;
+    height: 45px; }
+
+/*# sourceMappingURL=style1.css.map */

@@ -1,0 +1,156 @@
+$contentBackground: null !default;
+
+@mixin BriefStyle($BrColor, $BrWidth, $BrHeight, $BrMarginB) {
+    color: $BrColor;
+    width: $BrWidth;
+    height: $BrHeight;
+    margin-bottom: $BrMarginB;
+}
+
+@mixin TableStyletd($linkColor, $TabletdColor, $tHeadColor) {
+    background-color: $TabletdColor;
+    border-bottom: 1px solid $tHeadColor;
+    a {
+        color: $linkColor;
+    }
+}
+
+body {
+    background: $backStore;
+    color: $fontColor;
+    a {
+        color: $linkColor
+    }
+    p {
+        font-family: $fontFamily;
+    }
+}
+
+h1 {
+    text-transform: $textTF;
+    margin-top: 0px;
+    text-align: center;
+    color: $heading1Color;
+}
+
+h2 {
+    margin-top: 10px;
+    color: $heading1Color;
+}
+
+#content {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background: $contentBackground;
+}
+
+div {
+    .brief {
+        @include BriefStyle($BrColor, $BrWidth, $BrHeight, $BrMarginB);
+        margin-right: 20px;
+        float: left;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 14px;
+        background: $layoutColor;
+    }
+}
+
+img {
+    border: 2px solid $heading1Color;
+    padding: 2px;
+    &.img-left {
+        margin-right: 20px;
+        float: left;
+    }
+    &.img-right {
+        margin-left: 20px;
+        float: right;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 60px;
+    caption {
+        color: $BrColor;
+        text-align: right;
+    }
+    tr {
+        th {
+            color: $BrColor;
+            background-color: $tHeadColor;
+            font-weight: normal;
+            text-align: left;
+            padding: 10px 15px;
+            text-transform: $textTFUp;
+            border-right: 1px solid #fff;
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+
+    td {
+        @include TableStyletd($linkColor, $TabletdColor, $tHeadColor);
+        text-align: left;
+        padding: 10px 15px;
+    }
+}
+
+form {
+    width: $width100;
+    h2 {
+        margin-bottom: 2px;
+    }
+    p {
+        color: $ContactTextColor;
+        text-transform: $textTFUp;
+        margin-bottom: 5px;
+    }
+    div {
+
+        &.unames {
+            display: flex;
+            width: $width100;
+        }
+        input {
+            border: 1px solid $tHeadColor;
+            margin-right: 9px;
+            padding-left: 4px;
+            height: 23px;
+            width: 476px;
+        }
+    }
+    div {
+        &.contactlast {
+            width: $width100;
+            input {
+                padding-right: 4px;
+                padding-left: 6px;
+                height: 23px;
+                width: $width100;
+            }
+        }
+    }
+    textarea {
+        margin-top: 0px;
+        border: 1px solid $tHeadColor;
+        padding-top: 5px;
+        padding-right: 8px;
+        width: $width100;
+    }
+    input[type="submit"] {
+        text-transform: $textTFUp;
+        background-color: $contentBackground;
+        font-size: 20px;
+        border: 1px solid $linkColor;
+        color: $linkColor;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 240px;
+        height: 45px;
+    }
+}
