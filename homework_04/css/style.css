@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+section.container-flex p:first-child {
+    font-size: 1.125rem;
+    padding: 0 60px 0 100px;
+    line-height: 1.5em;
+    width: 45%;
+    margin: 0;
+}
+
+section.container-flex p:last-child {
+    margin: 0;
+    font-size: 0.82rem;
+    width: 55%;
+    padding: 0 60px 0 50px;
+}
+
+.bg-grey {
+    background-color: #F3F3F3;
+    padding-bottom: 200px;
+}
+
+h3 {
+    padding-top: 20vh;
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 10vh;
+}
+
+header {
+    background: url(../img/apples.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    position: relative;
+    margin-top: 25vh;
+    margin-bottom: 0px;
+    letter-spacing: 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+}
+
+h1 span {
+    font-size: 90px;
+    font-family: 'Glosa-BoldItalic';
+}
+
+p.logo {
+    padding-left: 8px;
+    font: normal normal 14px 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-top: 30px;
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.menu li {
+    margin-right: 40px;
+    float: left;
+    display: block;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom-color: transparent;
+    transition: border-bottom-color ease-out .5s;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid;
+    border-bottom-color: #B1C9DB;
+    padding-bottom: 10px;
+}
+
+.tm {
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: super;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+ul {
+    margin-right: 200px;
+    margin-left: 200px;
+    padding-left: 0px;
+}
+
+nav {
+    padding-right: 7px;
+    margin-top: 30px;
+    float: right;
+    font: normal normal lighter 14px 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+.origdescribe {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding-right: 20px;
+}
+.button {
+    text-decoration: none;
+    padding: 18px 0;
+    border: 2px solid #fff;
+    width: 227px;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin-top: 28vh;
+}
+.imgArticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    height: 300px;
+    border: 2px solid #fff;
+}
+.item1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)), url(../img/sample.jpg) no-repeat;
+    flex-basis: 66%;
+    background-size: cover;
+    margin: 0 0px 23px 0;
+    border-bottom: 2px solid #EAEAEA;
+}
+.item2 {
+    flex-basis: 32%;
+    margin: 0px 0px 23px 0px;
+    background: linear-gradient( rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)), url(../img/sample2.jpg) no-repeat;
+    background-size: cover;
+}
+.item3 {
+    flex-basis: 32%;
+    background: linear-gradient( rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)), url(../img/sample2.jpg) no-repeat;
+    background-size: cover;
+}
+.item4 {
+    flex-basis: 66%;
+    background: linear-gradient( rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)), url(../img/sample3.jpg) no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid #EAEAEA;
+}
+div.flex-item a {
+    align-self: flex-end;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    padding: 8px 11px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+div.flex-item p {
+    font-size: 18px;
+    color: #EAEAEA;
+    padding: 0 0 10px 35px;
+}
+div.flex-item b {
+    color: #fff;
+}
+div.subscribe {
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+input[type="email"] {
+    flex-basis: 40%;
+    font-size: 15px;
+    background-color: #F3F3F3;
+    border: 1px solid #303335;
+    padding-left: 15px;
+}
+button[type="submit"] {
+    flex-basis: 15%;
+    font-size: 15px;
+    background-color: #303336;
+    color: #EAEAEA;
+    border: 1px solid #303335;
+}
+.subscribe input::-webkit-input-placeholder {
+    color: #303335;
+}
+div.subscribe p {
+    margin: 14px 0 14px 0;
+    font-size: 18px;
+    margin-right: 5%;
+}
+section.contact-info {
+    padding: 120px 40px 120px 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section.contact-info p {
+    font-size: 12px;
+    color: #808080;
+}
+section.contact-info h4 {
+    line-height: normal;
+}
+.flex-items-latw p:last-child {
+    color: #e8e8e8;
+    line-height: 5px;
+}
+.flex-items-blwh {
+    width: 15%;
+}
+.flex-items-contact {
+    line-height: 1.5em;
+    width: 13%;
+}
+.flex-items-latw {
+    width: 15%;
+}
+.flex-items-newle {
+    width: 20%;
+}
+.flex-items-newle input {
+    margin-top: 10px;
+    font-size: 12px;
+    width: 65%;
+    height: 40px;
+    margin-right: -5px;
+}
+.flex-items-newle button {
+    font-size: 11px;
+    width: 35%;
+    height: 40px;
+}
+.flex-items-newle input::-webkit-input-placeholder {
+    font-style: italic;
+}
+footer nav {
+    margin-top: 14px;
+    padding-bottom: 30px;
+}
+footer li:last-child {
+    margin-right: 0px;
+}
+footer .menu a {
+    font-weight: 600;
+    color: #000;
+}
+hr {
+    border-color: #fff;
+}
+footer p {
+    color: #808080;
+    font-size: 14px;
+    float: left;
+}
