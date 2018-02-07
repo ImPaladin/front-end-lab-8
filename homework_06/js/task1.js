@@ -11,7 +11,7 @@ function triangle() {
     var pythagorasB = Math.sqrt(Math.pow(sideFirst, 2) + Math.pow(sideLast, 2));
 
     function triangleTypeTest() {
-    		if ((sideLast == pythagorasC) || (sideFirst == pythagorasA) || (sideSecond == pythagorasB)) {
+        if ((sideLast == pythagorasC) || (sideFirst == pythagorasA) || (sideSecond == pythagorasB)) {
             typeofTriangle = "Right Triangle";
         } else if ((sideFirst == sideSecond) && (sideFirst == sideLast)) {
             typeofTriangle = "Equilateral";
@@ -28,7 +28,7 @@ function triangle() {
         if (Number.isInteger(square)) {
             return square;
         } else {
-        		square = +square.toFixed(2);
+            square = +square.toFixed(2);
             return square;
         }
     }
