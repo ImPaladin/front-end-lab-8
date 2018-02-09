@@ -1,6 +1,6 @@
-var sideFirst =parseFloat(prompt("Enter FirstSide of triangle"));
-var sideSecond = parseFloat(prompt("Enter SecondSide of triangle"));
-var sideLast =parseFloat(prompt("Enter LastSide of triangle"));
+var sideFirst =Number(prompt("Enter FirstSide of triangle"));
+var sideSecond = Number(prompt("Enter SecondSide of triangle"));
+var sideLast =Number(prompt("Enter LastSide of triangle"));
 
 
 function triangle() {

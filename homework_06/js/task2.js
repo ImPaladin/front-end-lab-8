@@ -1,5 +1,5 @@
-var euro = parseFloat(prompt("Enter Euro value"));
-var usd = parseFloat(prompt("Enter USD value"));
+var euro = Number(prompt("Enter Euro value"));
+var usd = Number(prompt("Enter USD value"));
 
 function convectorValute() {
 
