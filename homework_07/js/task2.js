@@ -1,13 +1,10 @@
-var possible = 10;
 var prize = 0;
-var maxposssible = 10;
-var min, max, i, possible, again, contie, user, checkpoint;
+var min, max, i, possible, maxposssible, again, contie, user, checkpoint;
 checkpoint = true;
 totop = true;
-max = 5;
 min = 0;
 var nRandom = Math.floor(Math.random() * (max - min)) + min;
-console.log(nRandom);
+//console.log(nRandom);
 user = confirm("Do you want to play a game?");
 if (user == false) {
     console.log("You did not become a millionaire");
@@ -18,7 +15,7 @@ if (user == false) {
         max = 5;
         checkpoint = true;
         var nRandom = Math.floor(Math.random() * (max - min)) + min;
-        console.log(nRandom);
+        //console.log(nRandom);
         for (i = 1; i <= 3; i++) {
             var userEnter = prompt("Enter a number from" + min + "to" + max + "\n" + "Attempts left :" + (4 - i) + "\n" + "Total prize: " + Math.floor(prize) + "$ \n" + "Possible prize on current attempt: " + Math.floor(possible) + "$");
             var userN = Number(userEnter);
@@ -28,7 +25,7 @@ if (user == false) {
                 if (contie == true) {
                     max *= 2;
                     nRandom = Math.floor(Math.random() * (max - min)) + min;
-                    console.log(nRandom);
+                    //console.log(nRandom);
                     possible = maxposssible;
                     possible *= 3;
                     maxposssible *= 3;
