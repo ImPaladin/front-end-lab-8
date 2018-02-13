@@ -16,7 +16,7 @@ if (user == false) {
         nRandom = Math.floor(Math.random() * (max - min)) + min;
         //console.log(nRandom);
         for (i = 1; i <= 3; i++) {
-            var userN = prompt("Enter a number from" + min + "to" + max + "\n" + "Attempts left :" + (4 - i) + "\n" + "Total prize: " + Math.floor(prize) + "$ \n" + "Possible prize on current attempt: " + Math.floor(possible) + "$");
+            var userN = prompt("Enter a number from " + min + " to " + max + "\n" + "Attempts left : " + (4 - i) + "\n" + "Total prize : " + Math.floor(prize) + "$ \n" + "Possible prize on current attempt: " + Math.floor(possible) + "$");
             if (userN == nRandom && !isNaN(parseFloat(userN)) && isFinite(userN)) {
                 prize += Math.floor(possible);
                 contie = confirm("Do you want to continue a game?");
