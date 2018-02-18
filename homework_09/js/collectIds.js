@@ -1,5 +1,5 @@
 function collectIds(movies) {
-    const filter = getFiltredArray(movies, el => {
+    const filter = getFilteredArray(movies, el => {
         return el.rating > 3;
     });
     return getTransformedArray(filter, el => {
